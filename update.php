@@ -1,6 +1,11 @@
 <?php
 include "config.php";
-$sql = "UPDATE myguests SET lastname = 'Hardiyanto' WHERE id = 7 " ;
+if (!empty($_GET) && !empty($_GET["id"])){
+    $id = $_GET["id"] ;
+} else {
+    $id = 0;
+}
+$sql = "UPDATE myguests SET lastname = 'Hardiyanto' WHERE id=".$id;
 if (mysqli_query( $conn, $sql )) {
     echo "record updated successfully" ;
 } else {
