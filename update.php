@@ -13,7 +13,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname) ;
 if (!$conn) {
     die ("connection failed: " . mysqli_connect_error());
 }
-$sql = "UPDATE myguests SET lastname = 'Hardiyanto' WHERE id = 2 " ;
+$sql = "UPDATE myguests SET lastname = 'Hardiyanto' WHERE id = 7 " ;
 if (mysqli_query( $conn, $sql )) {
     echo "record updated successfully" ;
 } else {
