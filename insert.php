@@ -1,4 +1,5 @@
 <?php
+
 //3 variabel default 
 $firstname="Febrian";
 $email="pekmbiee@gmail.com";
@@ -24,9 +25,8 @@ include "config.php";
 $sql = "INSERT INTO MyGuests ( firstname, lastname, email )
 VALUES (?,?,?)" ;
 
-/* 
-variabel $stmt diisi fungsi mysqli_prepare dengan input parameter $conn dan $sql
-*/
+ 
+//variabel $stmt diisi fungsi mysqli_prepare dengan input parameter $conn dan $sql
 $stmt = mysqli_prepare($conn,$sql);
 
 /* 
