@@ -1,7 +1,21 @@
 <?php
-function tulis_pesan() {
-    echo "hello world !";
+function tulisPesan($cb){
+    echo "halo mewaga renggaling!<br>";
+    $cb("mewa");
 }
+$namabelakang="evan";
+function namaKeluarga($namadepan="agus") {
+global $namabelakang;
+return $namadepan." ".$namabelakang;
+tulisPesan();
+return "$namadepan Mewaga.<br>";
+}
+echo namaKeluarga();
 
-print tulis_pesan()
+tulisPesan(function($name)
+{
+printf("Hello %s\r\n", $name);
+});
+
 ?>
+
