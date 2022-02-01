@@ -1,5 +1,5 @@
 # belajar-crud
 
-1.  ### buka folder form
-2.  ### ada 2 fungsi, fungsi insert dan fungsi update
+1.  ### ada 2 fungsi, fungsi insert dan fungsi update
+2.  ### form insert dan form update
 3.  ### enjoy!
